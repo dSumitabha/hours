@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import StatsCards from "./components/StatsCards";
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       <div className="p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Left Section (Stats, Charts, Budget Status) */}
         <div className="lg:col-span-3 space-y-6">
-          {/* Stats Summary Cards */}
+            <StatsCards />
           
 
           {/* Charts Section */}
