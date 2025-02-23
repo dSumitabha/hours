@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import StatsCards from "./components/StatsCards";
 import RevenueChart from "./components/RevenueChart";
+import BudgetChart from "./components/BudgetChart";
+
 
 const App = () => {
   return (
@@ -17,7 +19,7 @@ const App = () => {
           {/* Charts Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border">
             <RevenueChart />
-
+            <BudgetChart />
           </div>
 
           {/* Budget Status Section */}
