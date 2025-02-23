@@ -1,15 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./components/Navbar";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+    <div className="min-h-screen bg-gray-100">
+      <Navbar />
 
-export default App
+      {/* Main Dashboard Layout */}
+      <div className="p-6 grid grid-cols-1 lg:grid-cols-4 gap-6">
+        {/* Left Section (Stats, Charts, Budget Status) */}
+        <div className="lg:col-span-3 space-y-6">
+          {/* Stats Summary Cards */}
+          
+
+          {/* Charts Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+          </div>
+
+          {/* Budget Status Section */}
+          
+        </div>
+
+        {/* Right Section (Team Mood) */}
+        <div>
+          
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
